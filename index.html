@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Created by Deekay1085 -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Junior Front-End Developer To-Do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>Junior Front-End Developer To-Do List</h1>
+      <p id="progress-text">0 of 0 done</p>
+      <div class="bar" role="progressbar" aria-label="Overall progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div id="bar-fill"></div>
+      </div>
+    </header>
+
+    <form id="add-form" autocomplete="off">
+      <label for="new-task" class="sr-only">New task</label>
+      <input id="new-task" type="text" placeholder="Add a new task" required>
+      <label for="group" class="sr-only">Section</label>
+      <select id="group"></select>
+      <button type="submit">Add</button>
+    </form>
+
+    <div id="lists"></div>
+
+    <button id="reset" type="button" class="link-btn">Reset to default list</button>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
